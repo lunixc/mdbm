@@ -1950,7 +1950,7 @@ DataMgmtBaseTestSuite::FilledSinglePagedDbNonDefsAndShakeFuncPurgeG5()
     uint64_t size_post = mdbm_get_size(dbh);
     uint64_t count_post = mdbm_count_records(dbh);
 
-    fprintf(stderr, "MDBM SIZE went from %lu to %lu after %d entries (orig:%lu ent-prior:%lu post:%lu)\n", 
+    fprintf(stderr, "MDBM SIZE went from %llu to %llu after %d entries (orig:%llu ent-prior:%llu post:%llu)\n", 
         size_prior, size_post, refillAddCnt, count_orig, count_prior, count_post);
 
     // Should only be able to add twice the number of entries as first time
